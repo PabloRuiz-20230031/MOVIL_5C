@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal UTHH - Generar Referencia de Pago</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Fondo claro */
+            color: #333;
+        }
+
+        header {
+            background-color: #007d34; /* Verde institucional */
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-height: 70px;
+        }
+
+        header .title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00bcd4; /* Azul claro al pasar el mouse */
+        }
+
+        .content {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .content .alert {
+            background-color: #ffeeba;
+            color: #856404;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .content .options {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content .options label {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .content .options input {
+            margin-right: 10px;
+        }
+
+        .content .download-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .content .download-button:hover {
+            background-color: #218838; /* Verde más oscuro al pasar el mouse */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007d34;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo uthh.png" alt="Logo UTHH">
+        <div class="title">Portal Digital de Atención Integral a Estudiantes de la UTHH</div>
+        <img src="escudo.png" alt="Escudo Hidalgo">
+    </header>
+    <nav>
+        <a href="#">Cerrar sesión</a>
+        <a href="#">Datos de usuario</a>
+        <a href="#">Consultar mis calificaciones</a>
+        <a href="#">Entrevista inicial</a>
+        <a href="#">Pagos</a>
+        <a href="#">Agenda</a>
+    </nav>
+    <div class="content">
+        <div class="alert">Generar referencia de pago</div>
+        <div class="options">
+            <label>
+                <input type="radio" name="payment" value="tsu"> Pago de Titulación TSU
+            </label>
+            <label>
+                <input type="radio" name="payment" value="licenciatura"> Pago de Titulación Licenciatura
+            </label>
+        </div>
+        <a href="#" class="download-button">Descargar</a>
+    </div>
+    <footer>
+        <p>Hoy es, Viernes, 10 de enero de 2025</p>
+    </footer>
+</body>
+</html>

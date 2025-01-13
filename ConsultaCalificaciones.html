@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal UTHH - Calificaciones</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #e7eb00ee; /* Verde UTHH */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-height: 50px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline-block;
+            margin: 0;
+            padding-left: 1px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .welcome h2 {
+            color: #007B33; /* Verde UTHH */
+        }
+
+        /* Tabla de calificaciones */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+
+        table th {
+            background-color: #007B33; /* Verde UTHH */
+            color: white;
+        }
+
+        table td {
+            background-color: #f9f9f9;
+        }
+
+        table .promedio-final {
+            font-weight: bold;
+            color: #007B33;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007B33;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo uthh.png" alt="UTHH Logo">
+        <h1>Portal Digital de Atención Integral - UTHH</h1>
+    </header>
+    <nav>
+        <a href="#">Cerrar sesión</a>
+        <a href="#">Datos de usuario</a>
+        <a href="#">Consultar mis calificaciones</a>
+        <a href="#">Entrevista inicial</a>
+        <a href="#">Pagos</a>
+        <a href="#">Agenda</a>
+    </nav>
+    <main class="container">
+        <div>
+            <div class="student-info">
+                <div class="textInfo">
+                    <strong>
+                        <span>ALUMNO:</span>
+                        <span style="color: green;">JOSE ANTONIO MARTINEZ ALVARADO</span>
+                    </strong>
+                </div><br>
+
+                <div class="textInfo">
+                    <strong>
+                        <span style="color: transparent !important;">ALUMNO</span>
+                        <span  style="color: green;">TÉCNICO SUPERIOR UNIVERSITARIO EN TECNOLOGÍAS DE LA INFORMACIÓN</span>
+                    </strong>
+                </div><br>
+
+                <div class="textInfo">
+                    <strong>
+                        <span>CARRERA:</span> 
+                        <span style="color: green;">ÁREA DESARROLLO DE SOFTWARE MULTIPLATAFORMA</span>
+                    </strong>
+                </div><br>
+                <hr><br>
+                <div class="textInfo">
+                    <strong>
+                        <span>CUATRIMESTRE: </span>
+                    </strong>
+                    <select>
+                        <option selected>4er. CUATRIMESTRE</option>
+                    </select>
+                </div><br>
+
+                <div class="textInfo">
+                    <strong>
+                        <span>GRUPO:</span> 
+                        <span style="color: green;">C</span>
+                    </strong>
+                </div><br>
+
+                <div class="textInfo">
+                    <strong>
+                        <span>PERIODO:</span> 
+                        <span style="color: green;">20242</span>
+                    </strong>
+                </div>
+            </div>
+            <table class="container">
+                <thead>
+                    <tr>
+                        <th>Nombre de la materia</th>
+                        <th colspan="2">M1</th>
+                        <th colspan="2">M2</th>
+                        <th colspan="2">M3</th>
+                        <th>Promedio Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Principios de IoT</td>
+                        <td>9</td>
+                        <td>Or</td>
+                        <td>8</td>
+                        <td>Or</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td class="promedio-final">9</td>
+                    </tr>
+                    <tr>
+                        <td>Estructura de datos Aplicadas</td>
+                        <td>7</td>
+                        <td>E1</td>
+                        <td>7</td>
+                        <td>E1</td>
+                        <td>7</td>
+                        <td>Or</td>
+                        <td class="promedio-final">7</td>
+                    </tr>
+                    <tr>
+                        <td>Aplicaciones Web Orientada a Servicios</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td>8</td>
+                        <td>Or</td>
+                        <td>8</td>
+                        <td>Or</td>
+                        <td class="promedio-final">9</td>
+                    </tr>
+                    <tr>
+                        <td>Diseño de APPS</td>
+                        <td>8</td>
+                        <td>Or</td>
+                        <td>7</td>
+                        <td>E1</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td class="promedio-final">8</td>
+                    </tr>
+                    <tr>
+                        <td>Evaluacion y mejora para el desarrollo de software</td>
+                        <td>9</td>
+                        <td>Or</td>
+                        <td>8</td>
+                        <td>Or</td>
+                        <td>9</td>
+                        <td>Or</td>
+                        <td class="promedio-final">9</td>
+                    </tr>
+                    <tr>
+                        <td>Ingles IV</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td>8</td>
+                        <td>Or</td>
+                        <td>8</td>
+                        <td>Or</td>
+                        <td class="promedio-final">9</td>
+                    </tr>
+                    <tr>
+                        <td>Estandares y metricas para el desarrollo de software</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td class="promedio-final">10</td>
+                    </tr>
+                    <tr>
+                        <td>Formacion Sociocultural IV</td>
+                        <td>8</td>
+                        <td>Or</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td>10</td>
+                        <td>Or</td>
+                        <td class="promedio-final">9</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><strong>PROMEDIO</strong></td>
+                        <td class="promedio-final">8.75</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Carretera Huejutla - Chalahuiyapa S/N, C.P. 43000, Huejutla de Reyes, Hidalgo.</p>
+        <p>Teléfonos: 789 8962088 al 91</p>
+        <p>E-mail: <strong>rectoría@uthh.edu.mx</strong></p>
+        <p>Universidad Tecnológica de la Huasteca Hidalguense</p>
+    </footer>
+</body>
+</html>

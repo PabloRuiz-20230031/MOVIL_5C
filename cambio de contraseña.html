@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal UTHH - Cambiar Contraseña</title>
+    
+</head>
+<body>
+    <header>
+        <img src="logo uthh.png" alt="Logo UTHH">
+        
+        <img src="escudo.png" alt="Escudo Hidalgo">
+    </header>
+    <nav>
+        <a href="#">Cerrar sesión</a>
+        <a href="#">Datos de usuario</a>
+        <a href="#">Consultar mis calificaciones</a>
+        <a href="#">Entrevista inicial</a>
+        <a href="#">Pagos</a>
+        <a href="#">Agenda</a>
+    </nav>
+    <div class="content">
+        <div class="alert">Cambiar contraseña</div>
+        <h1>PABLO RUIZ SANTOS</h1>
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="current-password">Contraseña Actual:</label>
+                <input type="password" id="current-password" name="current-password" required>
+
+                <label for="new-password">Contraseña Nueva:</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <label for="confirm-password">Confirmar Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <div class="buttons">
+                    <a href="#" class="submit">Aceptar</a>
+                    <a href="#" class="cancel">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Hoy es, Sábado, 11 de enero de 2025</p>
+    </footer>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; 
+            color: #333; 
+        }
+
+        header {
+            background-color: #FBE290; 
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-height: 70px;
+        }
+
+        header .title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00bcd4; 
+        }
+
+        .content {
+            max-width: 500px; 
+            width: 90%; 
+            margin: 40px auto;
+            background: #CCDFCA;
+            padding: 20px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid #226C3F;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 1.8rem;
+            color: #555555;
+            margin-bottom: 15px;
+        }
+
+        .content .alert {
+            background-color: #ffeeba;
+            color: #856404;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .form-container {
+            text-align: left;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .form-container input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-container .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-container .buttons a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007d34;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container .buttons a:hover {
+            background-color: #005c26; 
+        }
+
+        .form-container .buttons a.cancel {
+            background-color: #dc3545;
+        }
+
+        .form-container .buttons a.cancel:hover {
+            background-color: #a71d2a; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .content {
+                width: 95%; 
+                padding: 15px;
+            }
+
+            .content h1 {
+                font-size: 1.5rem; 
+            }
+
+            .form-container label {
+                font-size: 0.9rem; 
+            }
+
+            .form-container input {
+                font-size: 0.9rem;
+                padding: 7px;
+            }
+
+            .form-container .buttons a {
+                font-size: 0.8rem;
+                padding: 7px 10px;
+            }
+
+            footer {
+                font-size: 0.8rem; 
+            }
+        }
+    </style>
+</body>
+</html>
