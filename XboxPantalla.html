@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox</title>
+    
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <div class="icons">
+                <img src="perfil.jpeg" alt="TEg">
+            </div>
+            <h1>Redes sociales</h1>
+            <div class="icon">🔒</div>
+            <div class="icon">✏️</div>
+        </header>
+
+        
+        <nav>
+            <div class="op">
+            <span>Amigos</span>
+            <span>Grupos</span>
+            <span>Chats</span>
+            </div>
+        </nav>
+
+        
+        <div class="scrollable-section">
+            <div class="friend-request">
+                <span>Solicitudes de amistad</span>
+                <div style="display: flex; align-items: center;">
+                    <div class="badge">1</div>
+                    <span class="arrow">➤</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Favoritos</h2>
+                <div class="friend">
+                    <img src="perfil2.jpg" alt="Millo">
+                    <div class="friend-info">
+                        <span>Millo480</span>
+                        <span class="nombreR">Jahel Heli Hernández Hernández<</span>
+                        <div class="friend-status">Desconectado</div>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="perfil3.jpg" alt="StressfulBear">
+                    <div class="friend-info">
+                        <span>StressfulBear0</span>
+                        <span class="nombreR">Claudys te amo cielo</span>
+                        <div class="friend-status">Desconectado</div>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="perfil4.jpeg" alt="Millo">
+                    <div class="friend-info">
+                        <span>The Room Azamar</span>
+                        <span class="nombreR">gabi rojas</span>
+                        <div class="friend-status">Último visto hace 67 d: F1® Manager 2024</div>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="perfil5.jpeg" alt="StressfulBear">
+                    <div class="friend-info">
+                        <span>Tona</span>
+                        <span class="nombreR">#8778</span>
+                        <div class="friend-status">Último visto hace 304 d: Minecraft</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">En línea</h2>
+                <div class="friend">
+                    <img src="perfil6.png" alt="Alex">
+                    <div class="friend-info">
+                        <span>ALEXF90FUT</span>
+                        <span class="nombreR">Alex Varela</span>
+                        <div class="friend-status">EA SPORTS FC™ 25 para Xbox One</div>
+                    </div>
+                    
+                </div>
+                <div class="friend">
+                    <img src="perfil7.jpeg" alt="Ben">
+                    <div class="friend-info">
+                        <span>BGA123</span>
+                        <span class="nombreR">#3900 ben perkinson</span>
+                        <div class="friend-status">Netflix</div>
+                    </div>
+                    
+                </div>
+                <div class="friend">
+                    <img src="perfil8.jpeg" alt="Alex">
+                    <div class="friend-info">
+                        <span>OldOsprey845856</span>
+                        <span clas="nombreR">jonatan pérez arias</span>
+                        <div class="friend-status">YouTube</div>
+                    </div>
+                    
+                </div>
+                <div class="friend">
+                    <img src="perfil9.jpeg" alt="Ben">
+                    <div class="friend-info">
+                        <span>Ryuk07xone</span>
+                        <span class="nombreR">Leonny Alves</span>
+                        <div class="friend-status">En línea</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="icon">🏠</div>
+            <div class="icon">👥</div>
+            <div class="icon">🔍</div>
+            <div class="icon">📚</div>
+            <div class="icon">🎮</div>
+        </footer>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            padding: 0;
+            overflow: hidden; 
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            margin-right: 20px; 
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header .icons {
+            display: flex;
+            gap: 10px;
+        }
+        header .icons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+            padding: 10px 0;
+            position: fixed;
+            top: 60px;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav span {
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .op{
+            margin-bottom: 05px;
+        }
+        .op span {
+            margin-right: 20px; 
+        }
+
+        .scrollable-section {
+            margin-top: 120px; 
+            overflow-y: auto; 
+            height: calc(100vh - 120px); 
+        }
+
+        .friend-request {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+
+        .friend-request span {
+            font-size: 1rem;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #16a34a;
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: bold;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .friend {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .nombreR{
+            font-size: 0.85em;
+            color:#bbb;
+        }
+
+        .friend img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .friend-info {
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        .friend-status {
+            font-size: 0.9rem;
+            margin-top: 05px;
+            color: #bbb;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #1e1e1e;
+            border-top: 1px solid #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer .icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.7rem;
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>
